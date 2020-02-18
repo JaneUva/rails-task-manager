@@ -18,5 +18,5 @@ Rails.application.routes.draw do
 
 
   # As a user, I can remove a task
-  delete 'tasks/:id', to: 'tasks#destroy', as: :delete_task
+  delete 'tasks/:id', to: 'tasks#destroy'
 end
