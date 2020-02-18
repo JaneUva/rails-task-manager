@@ -1,0 +1,7 @@
+<h1>Total number of tasks: 10</h1>
+<% @tasks.each do |task| %>
+  <p><input type="checkbox"> <%= link_to task.title, task_path(task.id) %> <%= link_to "x", task_path(task), method: :delete %></p>
+<% end %>
+<br>
+<br>
+<%= link_to "Add a new task",  new_task_path %>
